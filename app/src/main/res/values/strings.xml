@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">DSM 알리미</string>
+    <string name="action_settings">설정</string>
+    <string name="title_activity_info"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_web">DSM 홈페이지</string>
+    <string name="title_activity_information">내정보</string>
+    <string name="title_activity_feed_list">설문조사</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_meal">급식</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="txt_toolbar">Toolbar</string>
+    <string name="txt_floating_action_button">FloatActionButton</string>
+    <string name="txt_navigation_view">NavigationView</string>
+    <string name="txt_other">Other</string>
+    <string name="txt_yo_yo">Yo Yo</string>
+    <string name="title_activity_code_lab">CodeLabActivity</string>
+
+    <string name="info_one">34111 대전광역시 유성구 가정북로 76(장동 23-9) </string>
+    <string name="info_two">교무실 ☎ : 042-866-8822</string>
+    <string name="info_ttwo">교무실 Fax : 042-867-9900</string>
+    <string name="info_three">행정실 ☎ : 042-866-8885</string>
+    <string name="info_tthree">행정실 Fax : 042-863-4308</string>
+    <string name="info_four">사업자 등록 번호 314-83-01600</string>
+    <string name="info_five">기관 메일 bis_ddhs88@edurang.net</string>
+    <string name="first">교무실 ☎ : 042-866-8822 교무실 Fax : 042-867-9900</string>
+    <string name="second">행정실 ☎ : 042-866-8885 행정실 Fax : 042-863-4308</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_non_login_view">non_login_view</string>
+    <string name="title_activity_parent__register">parent__register</string>
+    <string name="title_activity_activity_sub">activity_sub</string>
+    <string name="title_activity_sub">subActivity</string>
+    <string name="title_activity_survey">설문조사</string>
+    <string name="register">회원가입</string>
+    <string name="login">로그인</string>
+    <string name="app_info">앱 정보</string>
+
+    <string name="network_err">네트워크 오류!</string>
+    <string name="havent_id">존재하지 않는 아이디 입니다.</string>
+    <string name="worng_password">비밀번호가 잘못되었습니다.</string>
+    <string name="login_err">로그인 오류!</string>
+    <string name="unknow_err">알수없는 오류!</string>
+    <string name="read_fail">게시글 읽기에 실패했습니다.</string>
+    <string name="have_id">아이디가 이미 존재합니다.</string>
+    <string name="succeed_login">로그인에 성공 했습니다!</string>
+    <string name="succeed_register">회원가입에 성공 했습니다!</string>
+    <string name="register_err">회원가입 오류!</string>
+    <string name="NetworkCheck">네트워크 상태를 확인해 주세요</string>
+    <string name="title_activity_application">앱 정보</string>
+
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="title_activity_mission">신입생 미션</string>
+    <string name="title_activity_plans">학사 일정</string>
+    <string name="title_activity_setting">설정</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="action_file">첨부파일</string>
+    <string name="action_next">다음글</string>
+    <string name="action_befor">이전글</string>
+    <string name="next">다른 일정</string>
+
+</resources>

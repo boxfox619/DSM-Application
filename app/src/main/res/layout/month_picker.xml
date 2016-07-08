@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yearPicker"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/monthsPicker"
+            android:layout_alignTop="@+id/yearPicker"
+            android:layout_toRightOf="@+id/yearPicker"
+            android:layout_toEndOf="@+id/yearPicker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="월"
+            android:id="@+id/textView47"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/yearPicker"
+            android:layout_alignRight="@+id/monthsPicker"
+            android:layout_alignEnd="@+id/monthsPicker" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/linearLayout3"
+            android:layout_alignTop="@+id/textView47"
+            android:layout_toLeftOf="@+id/textView47"
+            android:layout_alignLeft="@+id/yearPicker"
+            android:layout_alignStart="@+id/yearPicker">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="년"
+                android:id="@+id/textView43"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:background="#2196F3">
+        <ImageView
+            android:src="@drawable/logo_small"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:scaleType="center"
+            android:background="#2196F3"
+            android:contentDescription="@string/app_name"
+            android:layout_marginBottom="-12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="학사일정 선택"
+            android:id="@+id/textView7"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

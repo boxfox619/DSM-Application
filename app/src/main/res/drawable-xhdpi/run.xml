@@ -1,0 +1,29 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+    <item android:drawable="@drawable/pink_run_001"
+
+        android:duration="600"/>
+
+
+    <item android:drawable="@drawable/pink_run_002"
+
+        android:duration="800"/>
+
+
+    <item android:drawable="@drawable/pink_run_003"
+
+        android:duration="800"/>
+
+
+
+    <item android:drawable="@drawable/logo_small"
+
+        android:duration="1400"/>
+
+
+
+
+
+</animation-list>

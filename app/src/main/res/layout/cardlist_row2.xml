@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/card"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        sl:scale_base_width="100"
+        sl:scale_base_height="17">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_group"
+            android:background="@color/colorPrimary"
+            sl:scale_textsize="6"
+            sl:scale_left="0.5"
+            sl:scale_top="0.5"
+            sl:scale_width="16"
+            sl:scale_height="16"
+            android:padding="5dp"
+            android:id="@+id/IvIcon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="title"
+            android:id="@+id/titles"
+            android:singleLine="true"
+            sl:scale_textsize="6"
+            sl:scale_left="17"
+            sl:scale_top="1"
+            sl:scale_width="50"
+            sl:scale_height="10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="인원"
+            android:id="@+id/contexts"
+            sl:scale_textsize="4"
+            sl:scale_left="17"
+            sl:scale_top="11"
+            sl:scale_width="70"
+            sl:scale_height="5"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_textsize="4"
+            sl:scale_left="90"
+            sl:scale_top="6"
+            sl:scale_width="7"
+            sl:scale_height="5"
+            android:checked="false"
+            android:id="@+id/checks" />
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F7FFF</color>
+    <color name="colorPrimaryDark">#303FFF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="nav_item_icon_tint_color">#333</color>
+    <color name="nav_item_text_color">#333</color>
+    <color name="shadow">#555555</color>
+    <color name="title">#777777</color>
+    <color name="black">#33000000</color>
+    <color name="blackTwo">#CCFF4081</color>
+    <color name="cardBlue">#CC3F7FFF</color>
+    <color name="cardGreen">#CC00cc7a</color>
+</resources>

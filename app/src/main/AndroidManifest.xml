@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dsm_boxfox" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="ANDROID.PERMISSION.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <permission
+        android:name="com.boxfox.dsm_boxfox.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.dsm_boxfox.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.boxfox.dsm_boxfox.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.boxfox.dsm_boxfox" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.boxfox.dsm_boxfox.GCMIntentService" />
+
+        <activity
+            android:name="com.boxfox.dsm_boxfox.Sub.InfoActivity"
+            android:label="@string/title_activity_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.Sub.InformationActivity2"
+            android:label="@string/title_activity_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.Sub.WebActivity"
+            android:label="@string/title_activity_web"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.Sub.InformationActivity"
+            android:label="@string/title_activity_information"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.Survey.FeedListActivity"
+            android:label="@string/title_activity_feed_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.Meal.MealActivity"
+            android:label="@string/title_activity_meal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.Applications.ApplicationActivity"
+            android:label="@string/title_activity_application"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.Sub.MissionActivity"
+            android:label="@string/title_activity_mission"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.Sub.PlansActivity"
+            android:label="@string/title_activity_plans"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.Sub.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.boxfox.dsm_boxfox.CheckInActivity"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/scrollView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="@dimen/expanded_toolbar_title_margin_start">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/logo"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="-15dp"
+                android:paddingBottom="50dp"
+                android:paddingLeft="10dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView8" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rouned_corner_shadow"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_alignLeft="@+id/relativeLayout3"
+                android:layout_alignStart="@+id/relativeLayout3"
+                android:layout_marginTop="15dp"
+                android:id="@+id/rl4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    sl:scale_base_width="100"
+                    sl:scale_base_height="13"
+                    android:id="@+id/view9">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="학교 정보"
+                    android:id="@+id/textView28"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/rouned_color_shadow2"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:autoText="false"
+                    sl:scale_left="0"
+                    sl:scale_top="0"
+                    sl:scale_width="100"
+                    sl:scale_height="13"
+                    sl:scale_textsize="5.5"/>
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout2"
+                    android:layout_below="@+id/view9"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <com.ssomai.android.scalablelayout.ScalableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/test2"
+                        sl:scale_base_width="100"
+                        sl:scale_base_height="30">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/icon"
+                        android:layout_below="@+id/view9"
+                        android:layout_centerHorizontal="true"
+                        sl:scale_left="0"
+                        sl:scale_top="1"
+                        sl:scale_width="100"
+                        sl:scale_height="30"
+                        sl:scale_textsize="4" />
+                    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/relativeLayout2"
+                        android:layout_below="@+id/test2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp">
+                        <com.ssomai.android.scalablelayout.ScalableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            
+                            sl:scale_base_width="100"
+                            sl:scale_base_height="6">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="대덕소프트웨어 마이스터 고등학교 2015년 3월 개교"
+                            android:id="@+id/textView29"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_horizontal"
+                            sl:scale_left="0"
+                            sl:scale_top="1"
+                            sl:scale_width="100"
+                            sl:scale_height="6"
+                            sl:scale_textsize="4"/>
+                        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearLayout"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/testasd"
+                        android:gravity="center_horizontal">
+                        <com.ssomai.android.scalablelayout.ScalableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/test2"
+                            sl:scale_base_width="100"
+                            sl:scale_base_height="6">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/first"
+                            android:id="@+id/textView12"
+                            android:layout_below="@+id/textView10"
+                            sl:scale_left="0"
+                            sl:scale_top="1"
+                            sl:scale_width="100"
+                            sl:scale_height="6"
+                            sl:scale_textsize="3.5"
+                            android:gravity="center_horizontal" />
+                        </com.ssomai.android.scalablelayout.ScalableLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout2"
+                        android:layout_alignLeft="@+id/relativeLayout2"
+                        android:layout_alignStart="@+id/relativeLayout2"
+                        android:id="@+id/linearLayout"
+                        android:gravity="center_horizontal">
+
+                        <com.ssomai.android.scalablelayout.ScalableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/test2"
+                            sl:scale_base_width="100"
+                            sl:scale_base_height="6">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/second"
+                            android:id="@+id/textView13"
+                            android:layout_below="@+id/textView12"
+                            android:layout_alignLeft="@+id/textView12"
+                            android:layout_alignStart="@+id/textView12"
+                            sl:scale_left="0"
+                            sl:scale_top="1"
+                            sl:scale_width="100"
+                            sl:scale_height="6"
+                            sl:scale_textsize="3.5"
+                            android:gravity="center_horizontal" />
+                        </com.ssomai.android.scalablelayout.ScalableLayout>
+                    </LinearLayout>
+                    <com.ssomai.android.scalablelayout.ScalableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/test2"
+                        sl:scale_base_width="100"
+                        sl:scale_base_height="12">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/info_one"
+                        android:id="@+id/textView10"
+                        android:layout_below="@+id/relativeLayout2"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        sl:scale_left="0"
+                        sl:scale_top="1"
+                        sl:scale_width="100"
+                        sl:scale_height="5"
+                        sl:scale_textsize="3.5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/info_five"
+                        android:id="@+id/textView15"
+                        android:layout_above="@+id/linearLayout"
+                        android:layout_alignRight="@+id/imageView5"
+                        android:layout_alignEnd="@+id/imageView5"
+                        android:gravity="center_horizontal"
+                        sl:scale_left="0"
+                        sl:scale_top="5"
+                        sl:scale_width="100"
+                        sl:scale_height="6"
+                        sl:scale_textsize="3.5"/>
+                    </com.ssomai.android.scalablelayout.ScalableLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rouned_corner_shadow"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    sl:scale_base_width="100"
+                    sl:scale_base_height="13"
+                    android:id="@+id/view10">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="홍보 영상"
+                    android:id="@+id/textView24"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/rouned_color_shadow2"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:autoText="false"
+                    sl:scale_left="0"
+                    sl:scale_top="0"
+                    sl:scale_width="100"
+                    sl:scale_height="13"
+                    sl:scale_textsize="5.5"/>
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <com.google.android.youtube.player.YouTubePlayerView
+                    android:id="@+id/youtube_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rouned_corner_shadow"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="0.38">
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/test2"
+                    sl:scale_base_width="100"
+                    sl:scale_base_height="13">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="개발 정보"
+                    android:id="@+id/textView26"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/rouned_color_shadow2"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:autoText="false"
+                    sl:scale_left="0"
+                    sl:scale_top="0"
+                    sl:scale_width="100"
+                    sl:scale_height="13"
+                    sl:scale_textsize="5.5"/>
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/test2"
+                    sl:scale_base_width="100"
+                    sl:scale_base_height="8">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView30"
+                    android:layout_gravity="center_horizontal"
+                    android:text="- 도움을 주신 분들 -"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/textView26"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="3dp"
+                    sl:scale_left="0"
+                    sl:scale_top="1"
+                    sl:scale_width="100"
+                    sl:scale_height="8"
+                    sl:scale_textsize="5"/>
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/test2"
+                    sl:scale_base_width="100"
+                    sl:scale_base_height="11">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="박성근 선생님 / 전호연 선생님 / 임홍렬 선생님"
+                    android:id="@+id/textView27"
+                    android:layout_below="@+id/textView30"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"
+                    sl:scale_left="0"
+                    sl:scale_top="1"
+                    sl:scale_width="100"
+                    sl:scale_height="5"
+                    sl:scale_textsize="3.5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="김동규"
+                    android:id="@+id/textView40"
+                    android:gravity="center_horizontal"
+                    android:layout_above="@+id/textView31"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    sl:scale_left="0"
+                    sl:scale_top="6"
+                    sl:scale_width="100"
+                    sl:scale_height="6"
+                    sl:scale_textsize="3.5" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/test2"
+                    sl:scale_base_width="100"
+                    sl:scale_base_height="8">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textView31"
+                    android:layout_gravity="center_horizontal"
+                    android:text="- 조언해 주신 분들 -"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/textView27"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="3dp"
+                    sl:scale_left="0"
+                    sl:scale_top="1"
+                    sl:scale_width="100"
+                    sl:scale_height="8"
+                    sl:scale_textsize="5"/>
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/test2"
+                    sl:scale_base_width="100"
+                    sl:scale_base_height="22">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="김성휘 선생님 / 정하얀 선생님 / 김지영 선생님"
+                    android:id="@+id/textView38"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/textView31"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    sl:scale_left="0"
+                    sl:scale_top="0"
+                    sl:scale_width="100"
+                    sl:scale_height="6"
+                    sl:scale_textsize="3.5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="이태옥 선생님  / 정태균 / 김도훈 / 양재만"
+                    android:id="@+id/textView39"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/textView38"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    sl:scale_left="0"
+                    sl:scale_top="5"
+                    sl:scale_width="100"
+                    sl:scale_height="6"
+                    sl:scale_textsize="3.5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="김기황 / 정원태 / 장영훈 / 이영택 / 최정연"
+                    android:id="@+id/textView41"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/textView38"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_horizontal"
+                    sl:scale_left="0"
+                    sl:scale_top="10"
+                    sl:scale_width="100"
+                    sl:scale_height="5"
+                    sl:scale_textsize="3.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="유준영 / 박정환"
+                    android:id="@+id/textView42"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/textView38"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    sl:scale_left="0"
+                    sl:scale_top="15"
+                    sl:scale_width="100"
+                    sl:scale_height="5"
+                    sl:scale_textsize="3.5" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
